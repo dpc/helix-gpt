@@ -52,6 +52,10 @@ const { values } = parseArgs({
       type: 'string',
       default: Bun.env.COPILOT_MODEL ?? "gpt-3.5-turbo"
     },
+    copilotMaxTokens: {
+      type: 'string',
+      default: Bun.env.COPILOT_MAX_TOKENS ?? "7000"
+    },
     copilotApiKey: {
       type: 'string',
       default: Bun.env.COPILOT_API_KEY

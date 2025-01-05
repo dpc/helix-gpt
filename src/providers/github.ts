@@ -82,8 +82,8 @@ export default class Github extends ApiBase {
 
     const body = {
       intent: true,
-      max_tokens: 7909,
-      model: "gpt-4",
+      max_tokens: parseInt(config.copilotMaxTokens as string),
+      model: config.copilotModel,
       n: 1,
       stream: false,
       temperature: 0.1,
